@@ -1,0 +1,29 @@
+{
+    "appName": "networkinfra",
+    "appLocation": {
+    "local": "."
+    },
+    "meteorSettingsLocation": "/Users/baejinho/Documents/networkinfra/networkinfra",
+    "meteorSettingsInRepo": true,
+    "prebuildScript": "meteor npm install  --save",
+    "meteorBuildFlags": "--architecture os.linux.x86_64",
+    "env": {
+    "ROOT_URL": "http://34.69.189.202/",
+    "PORT": "3000",
+    "MONGO_URL": "mongodb://infra:infra@localhost:27017/infra"
+    },
+    "server": {
+        "host": "34.69.189.202",
+        "username": "contact",
+        "deploymentDir": "/opt/infra",
+        "pem": "~/.ssh/gcp-key",
+        "nvm": {
+            "bin": "~/.nvm/nvm.sh",
+            "use": "8.8.1"
+        },
+        "exec_mode": "cluster_mode",
+        "instances": "0",
+        "interactiveAuth": true
+    },
+    "allowUndeploy": true
+}

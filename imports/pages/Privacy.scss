@@ -1,0 +1,16 @@
+ 
+.privacyPC{
+    display: block;
+}
+.privacyMobile{
+display: none;
+}
+
+@media only screen and (max-device-width: 700px) {
+    .privacyPC{
+       display: none;
+    }
+    .privacyMobile{
+       display: block;
+    }
+}

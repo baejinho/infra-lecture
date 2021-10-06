@@ -1,0 +1,37 @@
+{
+  "name": "networkinfra",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "deploy:dev": "cd .dev-deploy && pm2-meteor deploy",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "@google-cloud/storage": "^5.14.1",
+    "antd": "4.12.2",
+    "bcrypt": "^1.0.3",
+    "firebase-admin": "^9.11.1",
+    "intl": "^1.2.5",
+    "meteor-node-stubs": "^0.4.1",
+    "pm2": "^4.5.4",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-intl": "^5.12.1",
+    "react-router-dom": "^5.2.0",
+    "react-wavesurfer": "^0.8.6",
+    "react-wavesurfer.js": "0.0.2",
+    "simpl-schema": "^1.10.2",
+    "wavesurfer-react": "^2.0.7",
+    "wavesurfer.js": "^4.6.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}

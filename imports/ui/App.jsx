@@ -13,8 +13,7 @@ import { createBrowserHistory } from "history";
 
 
 import HomePage from "../pages/Home";
- 
-import Service from "../pages/Service";  
+  
 
 
 import VLAN from "../pages/VLAN";
@@ -22,11 +21,7 @@ import VPN from "../pages/VPN";
 import NFV from "../pages/NFV";
  
   
- 
-
-
-import LoginPage from "../pages/Login";
-import JoinPage from "../pages/Join"; 
+  
 
  
 import { Menu, Dropdown, Modal, Checkbox, Input } from 'antd';
@@ -727,37 +722,7 @@ class Footer extends Component {
  
 
              
-            <Route
-              exact
-              path="/cart"
-              render={(props) => 
-                {
-                  if(user) return <Cart  {...props} />;
-                  if (user && !admin) return <Redirect to={{ pathname: '/', state: { from: props.location }}} />;
-                }} 
-            />
-
-            <Route
-              exact
-              path="/service"
-              component={Service}
-              {...this.props}
-            />
-
-             
-            <Route
-              exact
-              path="/login"
-              component={LoginPage}
-              {...this.props}
-            />
-            <Route
-              exact
-              path="/join"
-              component={JoinPage}
-              {...this.props}
-            />
-             
+           
  
             </div>
             

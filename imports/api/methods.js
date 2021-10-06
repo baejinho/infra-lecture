@@ -6,8 +6,7 @@ import { Accounts } from "meteor/accounts-base";
 import Users from './users'; 
 import { Email } from 'meteor/email'
 //import {Storage} from '@google-cloud/storage';
-
-import * as admin from 'firebase-admin';
+ 
 
 import _ from "lodash";
 

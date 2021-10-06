@@ -11,31 +11,7 @@ const UserProfile = new SimpleSchema({
   phone: {
     type: String,
     optional: true
-  }, 
-  homepage: {
-    type: String,
-    optional: true
-  }, 
-  likes: {
-    type: Array,
-    optional: true
-  }, 
-  cart: {
-    type: Array,
-    optional: true
-  },
-  "likes.$": {
-    type: Meteor.Collection.ObjectID,
-    regEx: SimpleSchema.RegEx.Id,
-    blackbox: true,
-    optional: true
-  }, 
-  "cart.$": {
-    type: Meteor.Collection.ObjectID,
-    regEx: SimpleSchema.RegEx.Id,
-    blackbox: true,
-    optional: true
-  }
+  } 
 });
 
 const User = new SimpleSchema(

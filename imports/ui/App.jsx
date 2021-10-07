@@ -81,21 +81,7 @@ class Header extends Component {
           src="/images/profile.png"
           onClick={()=>{
             
-            
-            const user = Meteor.user();
-            console.log(user)
-
-            if(user==null){
-              console.log(1)
-
-              this.setState({isLoginModal:true}, ()=>
-              {
-                console.log(this.state.isLoginModal)
-              });
-              
-            }else{
-              
-            } 
+          
             
           }}
           />

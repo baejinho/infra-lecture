@@ -12,47 +12,26 @@ import { withTracker } from "meteor/react-meteor-data";
 import { createBrowserHistory } from "history";
 
 
-import HomePage from "../pages/Home";
-  
-
-
+import HomePage from "../pages/Home"; 
 import VLAN from "../pages/VLAN";
 import VPN from "../pages/VPN";
 import NFV from "../pages/NFV";
- 
-  
-  
-
- 
-import { Menu, Dropdown, Modal, Checkbox, Input } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
-
- 
+   
 
 import 'antd/dist/antd.css';
 import "./App.scss"; 
 
 const appHistory = createBrowserHistory();
-
  
-
-
 class Header extends Component {
   state = {
     visible: false,
-    langtext : "한국어 / KR",
-    isLoginModal :false,
-    isCartModal: false, 
+    langtext : "한국어 / KR", 
     email:"",
-    password:"",
-    menuModal: false,
-    left: false,
-    cartList:[]
+    password:"", 
+    left: false 
   }
-
-   
-  
-
+ 
   renderPC(){
 
     let color = "#FFFFFF";

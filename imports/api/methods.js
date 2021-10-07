@@ -34,12 +34,7 @@ Meteor.methods({
     email,
     password,
     name,
-    phone,
-    mysignalAgree , 
-    payAgree , 
-    personalAgree , 
-    thirdAgree ,  
-    promotionAgree 
+    phone 
   }){
     
     const userId = Accounts.createUser({
@@ -47,12 +42,7 @@ Meteor.methods({
       password,
       profile: {
         name,
-        phone,
-        mysignalAgree , 
-        payAgree , 
-        personalAgree, 
-        thirdAgree ,  
-        promotionAgree 
+        phone 
       }
     });
 

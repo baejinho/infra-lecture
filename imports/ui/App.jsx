@@ -193,10 +193,7 @@ class Footer extends Component {
            />}
             /> 
           <Switch>
-            <div className="app">
-            {this.state.isPlay?
-            this.renderPlay():
-            null}
+            <div className="app"> 
             <Route exact path="/" 
             render={(props) => <HomePage {...props} 
             />}

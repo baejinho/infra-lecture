@@ -5,12 +5,7 @@ import "./NFV.scss";
  
 
 export default class NFV extends Component {
-   
-  state = {
-    isTitleOver :false,
-    isSignalOver:false,
-    isCustomOver:false
-  }
+    
 
   render() { 
 

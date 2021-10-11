@@ -5,12 +5,7 @@ import "./VPN.scss";
  
 
 export default class VPN extends Component {
-   
-  state = {
-    isTitleOver :false,
-    isSignalOver:false,
-    isCustomOver:false
-  }
+    
 
   render() { 
 

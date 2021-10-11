@@ -5,12 +5,7 @@ import "./VLAN.scss";
  
 
 export default class VLAN extends Component {
-   
-  state = {
-    isTitleOver :false,
-    isSignalOver:false,
-    isCustomOver:false
-  }
+    
 
   render() { 
 

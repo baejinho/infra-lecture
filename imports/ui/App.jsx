@@ -58,19 +58,28 @@ class Header extends Component {
 
           <div style={{width:160, marginTop: 10, color: 
           this.props.location.pathname === "/vlan"?selectedcolor:color, textAlign:"center", fontSize:13, cursor:"pointer", fontFamily:"Mark Pro Heavy", letterSpacing:5}}
-            onClick={()=>{this.props.history.push("/vlan")}}>
+            onClick={()=>{
+              console.log("VLAN");
+              this.props.history.push("/vlan")
+              }}>
         
             VLAN
           </div>
           <div style={{width:160, marginTop: 10, color: 
             this.props.location.pathname === "/vpn"?selectedcolor:color, textAlign:"center", fontSize:13, cursor:"pointer", fontFamily:"Mark Pro Heavy", letterSpacing:5}}
-              onClick={()=>{this.props.history.push("/vpn")}}>
+              onClick={()=>{
+                console.log("VPN");
+                this.props.history.push("/vpn")
+                }}>
           
             VPN
           </div>
           <div style={{width:160, marginTop: 10, color: 
             this.props.location.pathname === "/nfv"?selectedcolor:color, textAlign:"center", fontSize:13, cursor:"pointer", fontFamily:"Mark Pro Heavy", letterSpacing:5}}
-              onClick={()=>{this.props.history.push("/nfv")}}>
+              onClick={()=>{
+                console.log("NFV");
+                this.props.history.push("/nfv")
+                }}>
             NFV
           </div>  
 
